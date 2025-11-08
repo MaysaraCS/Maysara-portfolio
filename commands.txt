@@ -2,3 +2,4 @@ npm create vite@latest
 npm install -D tailwindcss@3
 npx tailwindcss init
 npm i react-router-dom react-parallax-tilt react-icons react-typing-effect react-toastify
+npm i prop-types

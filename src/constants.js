@@ -30,30 +30,25 @@ import mcLogo from './assets/tech_logo/mc.png';
 import figmaLogo from './assets/tech_logo/figma.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
-import bleLogo from './assets/tech_logo/BLE.png';
 import ble2Logo from './assets/tech_logo/BLE-2.png';
 import mcpLogo from './assets/tech_logo/MCP.png';
 
 // Experience Section Logo's
-import webverseLogo from './assets/company_logo/webverse_logo.png';
-import agcLogo from './assets/company_logo/agc_logo.png';
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
+import GatesITLogo from './assets/company_logo/gates_technology_sdn_bhd_logo.jpg';
+
 
 // Education Section Logo's
-import glaLogo from './assets/education_logo/gla_logo.png';
-import bsaLogo from './assets/education_logo/bsa_logo.png';
-import vpsLogo from './assets/education_logo/vps_logo.png';
+import UTM from './assets/education_logo/utm.png';
+import Shati from './assets/education_logo/school.jpg';
 
 // Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
-import csprepLogo from './assets/work_logo/cs_prep.png';
-import movierecLogo from './assets/work_logo/movie_rec.png';
-import taskremLogo from './assets/work_logo/task_rem.png';
-import npmLogo from './assets/work_logo/npm.png';
-import webverLogo from './assets/work_logo/web_dig.png';
-import cmLogo from './assets/work_logo/cm.png';
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import removebgLogo from './assets/work_logo/remove_bg.png';
+import BFRM from './assets/work_logo/BFRM.png';
+import ChatApp from './assets/work_logo/chatApp.png';
+import CustomerService from './assets/work_logo/customerService.png';
+import DrawingApp from './assets/work_logo/drawingApp.png';
+import PrepWise from './assets/work_logo/PrepWise.png';
+import ResumeBuilder from './assets/work_logo/resumeBuilder.png';
+
 
 
 export const SkillsInfo = [
@@ -107,7 +102,6 @@ export const SkillsInfo = [
       { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Figma', logo: figmaLogo },
-      { name: 'BLE', logo: bleLogo },
       { name: 'BLE-2', logo: ble2Logo },
       { name: 'MCP', logo: mcpLogo },
     ],
@@ -117,55 +111,20 @@ export const SkillsInfo = [
   export const experiences = [
     {
       id: 0,
-      img: webverseLogo,
-      role: "Fullstack Developer",
-      company: "Webverse Digital",
-      date: "April 2024 - Present",
-      desc: "Developed dynamic and scalable web applications using the MERN stack, handling both frontend and backend development. Collaborated with cross-functional teams to build responsive UI, implement RESTful APIs, and optimize application performance in an agile environment.",
+      img: GatesITLogo,
+      role: "Junior Software Engineer",
+      company: "GatesIT Sdn Bhd",
+      date: "Sep 2024 - Feb 2025",
+      desc: "Developed a full-stack mobile application using Flutter and Laravel, integrating Bluetooth Low Energy (BLE) technology to enable seamless device connectivity and enhance overall user experience. Contributed to UI/UX design to ensure intuitive navigation and visual consistency, and performed software quality assurance testing to maintain performance, reliability, and functionality standards throughout the development cycle.",
       skills: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React JS",
-        "TypeScript",
-        "Node JS",
-        "Tailwind CSS",
-        "MongoDb",
-        "Redux",
-        " Next Js",
-      ],
-    },
-    {
-      id: 1,
-      img: agcLogo,
-      role: "Fullstack Engineer",
-      company: "Agumentik Group of Companies",
-      date: "July 2023 - March 2024",
-      desc: "Contributed to innovative projects as a Fullstack Engineer, leading both frontend and backend development using technologies such as HTML, CSS, JavaScript, PHP, SQL, Bootstrap, and ReactJS. Worked closely with the team to deliver responsive, high-performance web applications and improve user experience through seamless integration of various technologies.",
-      skills: [
-        "ReactJS",
-        "Redux",
-        "JavaScript",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "SQL",
-      ],
-    },
-    {
-      id: 2,
-      img: newtonschoolLogo,
-      role: "Frontend Intern",
-      company: "Newton School",
-      date: "September 2021 - August 2022",
-      desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
-      skills: [
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap",
-        "Figma",
-        "Material UI",
+        "Flutter",
+        "Laravel",
+        "RESTful APIs",
+        "figma",
+        "BLE Technology",
+        "MySQL",
+        "IOT",
+        "UI & UX",
       ],
     },
   ];
@@ -173,131 +132,81 @@ export const SkillsInfo = [
   export const education = [
     {
       id: 0,
-      img: glaLogo,
-      school: "GLA University, Mathura",
-      date: "Sept 2022 - July 2024",
-      grade: "7.81 CGPA",
-      desc: "I have completed my Master's degree (MCA) in Computer Applications from GLA University, Mathura. During my time at GLA, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. I actively participated in various workshops and technical events, which enhanced my skills and knowledge. My experience at GLA University has been instrumental in shaping my technical abilities and professional growth.",
-      degree: "Master of Computer Applications - MCA",
+      img: UTM,
+      school: "Universiti Teknologi Malaysia",
+      date: "Feb 2021 - Aug 2025",
+      grade: "3.2 CGPA",
+      desc: "I completed my Bachelor of Computer Science Software engineeringe from (UTM) , Universiti Teknologi Malaysia, where I developed a strong foundation in computing and software development. Throughout my studies, I explored diverse subjects such as Data Structures and Algorithms, Web Development, and Database Management Systems, which provided me with both theoretical knowledge and hands-on experience. My academic journey at UTM also involved working on multiple projects that translated classroom concepts into real-world software solutions, strengthening my problem-solving and technical skills.",
+      degree: "Bachelor of Computer Science Software engineering (B.Comp.Sci.)",
     },
     {
       id: 1,
-      img: bsaLogo,
-      school: "BSA College, Mathura",
-      date: "Sept 2018 - Aug 2021",
-      grade: "73.2%",
-      desc: "I completed my Bachelor's degree in Computer Science (B.Sc.) from BSA College, Mathura. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of computing and technology. From exploring Data Structures and Algorithms to diving into Web Development and Database Management Systems, I gained practical insights into the world of software development. My time at BSA College allowed me to work on projects that applied theoretical concepts to real-world problems.",
-      degree: "Bachelor of Science - BSC (Computer Science)",
-    },
-    {
-      id: 2,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2017 - March 2018",
-      grade: "78%",
-      desc: "I completed my class 12 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Physics, Chemistry, and Mathematics (PCM) with Computer Science.",
-      degree: "CBSE(XII) - PCM with Computer Science",
-    },
-    {
-      id: 3,
-      img: vpsLogo,
-      school: "Vatsalya Public School Govardhan, Mathura",
-      date: "Apr 2015 - March 2016",
-      grade: "87.5%",
-      desc: "I completed my class 10 education from Vatsalya Public School, Govardhan, under the CBSE board, where I studied Science with Computer.",
-      degree: "CBSE(X), Science with Computer Application",
+      img: Shati,
+      school: "Al-Shati Secondary School",
+      date: "Sept 2017 - Jul 2020",
+      grade: "99.70%",
+      desc: "I completed my secondary education at Al-Shati Secondary School with an exceptional academic record, achieving a 99.70% overall score. During my studies, I built a strong foundation in key subjects such as Mathematics, Computer Science, and Physics, which strengthened my analytical and problem-solving abilities. Beyond academics, I actively participated in science clubs and technology competitions, where I honed my teamwork, creativity, and leadership skills. My experience at Al-Shati not only shaped my academic excellence but also inspired my passion for technology, innovation, and continuous learning.",
+      degree: "Secondary School Certificate (SSC)",
     },
   ];
   
   export const projects = [
     {
       id: 0,
-      title: "GitHub Profile Detective",
+      title: "MERN Stack AI Resume Builder",
       description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: githubdetLogo,
-      tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
-      github: "https://github.com/codingmastr/GitHub-Profile-Search-App-Using-React-JS",
-      webapp: "https://githubprofiledetective.netlify.app/",
+        "Developed an AI-powered Resume Builder using the MERN stack (MongoDB, Express.js, React, Node.js), integrated with the Gemini AI API to enhance resume content generation. Implemented user authentication, multiple customizable templates, photo upload with background removal, color selection, and full CRUD functionality. Utilized Redux for state management and Axios for API communication. The application offers a clean, user-friendly interface that allows users to effortlessly create, download, and share personalized resumes.",
+      image: ResumeBuilder,
+      tags: ["MongoDB", "Express.js", "React", "Node.js", "Gemini AI"],
+      github: "https://github.com/MaysaraCS/MERN-Full-Stack-AI-Resume-Builder",
+      webapp: "https://github.com/MaysaraCS/MERN-Full-Stack-AI-Resume-Builder",
     },
     {
       id: 1,
-      title: "CS Prep",
+      title: "PrepWise - AI Interview Preparation Assistant ",
       description:
-        "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
-      image: csprepLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/CSPrep",
-      webapp: "https://csprep.netlify.app/",
+        "Developed PrepWise, an AI-powered Interview Preparation Assistant built with the MERN stack and TypeScript, integrated with the Vapi AI API for intelligent interview simulations. Implemented Firebase for authentication and database management, enabling secure user registration and login. Designed a custom workflow in Vapi to process user input, extract data in JSON format, and generate personalized interview questions and feedback. The application provides an interactive, AI-driven experience to help users prepare effectively for interviews.",
+      image: PrepWise,
+      tags: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Vapi AI"],
+      github: "https://github.com/MaysaraCS/AI-Voice-Agent-Interview-Platform",
+      webapp: "https://ai-voice-agent-interview-platform-eight.vercel.app/sign-in",
     },
     {
       id: 2,
-      title: "Movie Recommendation App",
+      title: "MERN Stack Real Time Chat Application",
       description:
-        "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
-      image: movierecLogo,
-      tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/Movie-Recommendation-App",
-      webapp: "https://movie-recommendation-app-jet.vercel.app/",
+        "Developed a Real-Time Chat Application using the MERN stack (MongoDB, Express.js, React, Node.js) with Socket.IO for live messaging and JWT authentication for secure user access. Implemented Axios for API communication and React Hot Toast for real-time notifications. The app allows users to register, log in, send text and image messages, and view online friends through an intuitive, responsive interface supporting full CRUD functionality.",
+      image: ChatApp,
+      tags: ["MongoDB", "Express.js", "React", "Node.js", "Socket.IO", "Axios", "JWT"],
+      github: "https://github.com/MaysaraCS/MERN-Stack-Chat-App/tree/master",
+      webapp: "https://mern-stack-chat-app-five.vercel.app/login",
     },
     {
       id: 3,
-      title: "Email Validator NPM Package",
+      title: "Customer Service",
       description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: npmLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
+        "Developed a Customer Service Management System using Java Spring Boot, Angular, and PostgreSQL, following the MVC architecture for clean and maintainable code. Implemented full CRUD functionality to efficiently manage customer data, including adding, updating, and deleting records. The application features a responsive Angular frontend integrated with a robust Spring Boot backend, ensuring smooth data flow and user interaction.",
+      image: CustomerService,
+      tags: ["Java Spring Boot", "Angular", "PostgreSQL", "MVC Architecture"],
+      github: "https://github.com/MaysaraCS/Customer-Service-Java-spring-boot-Angular-postgreSQL-",
+      webapp: "https://github.com/MaysaraCS/Customer-Service-Java-spring-boot-Angular-postgreSQL-",
     },
     {
       id: 4,
-      title: "Task Reminder Chrome Extension Tool",
-      description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-      image: taskremLogo,
-      tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-      github: "https://github.com/codingmastr/Task-Reminder-Tool",
-      webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
+      title: "Beacon for Restaurant Marketing - BFRM",
+      description: "Developed a BLE-powered Mobile Application using Flutter, Laravel, and MySQL to connect restaurant owners and customers through location-based offers. Integrated with an I10 beacon device, the app allows merchants to publish coupons and discounts that are automatically displayed to nearby customers when a beacon is detected. Customers receive real-time notifications, can redeem offers via QR codes, and access filtered coupons based on availability. The Laravel backend API manages authentication for both users and merchants, while admins oversee all data through a web-based Laravel dashboard, ensuring seamless system management and control.",
+      image: BFRM,
+      tags: ["Flutter", "Laravel", "MySQL", "BLE Technology", "IOT"],
+      github: "https://www.linkedin.com/in/maysara-mohamed-241017244/details/projects/urn:li:fsd_profileProject:(ACoAADyDwZEB52LetQ_dLbe4fs8jRohwFlBUoqg,973269977)/treasury/",
+      webapp: "https://www.youtube.com/watch?v=S51GwswlATs",
     },
     {
       id: 5,
-      title: "Webverse Digital",
-      description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: webverLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: cmLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "https://codingmasterweb.in/",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Image Search App",
-      description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-      image: imagesearchLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: removebgLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
+      title: "JavaScript Drawing App",
+      description: "Developed an interactive web-based drawing application using JavaScript, enabling users to createshapes and choose from multiple colors and brush sizes. The app features a user-friendly interface that allows for easy selection of drawing tools, color palettes, and brush thickness, providing a seamless and enjoyable drawing experience directly within the browser.",
+      image: DrawingApp,
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/MaysaraCS/Drawing-app",
+      webapp: "https://maysaracs.github.io/Drawing-app/",
     },
   ];  
