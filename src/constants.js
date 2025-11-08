@@ -49,7 +49,25 @@ import DrawingApp from './assets/work_logo/drawingApp.png';
 import PrepWise from './assets/work_logo/PrepWise.png';
 import ResumeBuilder from './assets/work_logo/resumeBuilder.png';
 
-
+// Certificate Section Logo's
+import AngularCert from './assets/certificate_logo/Angular.jpg';
+import AWS1Cert from './assets/certificate_logo/AWS1.png';
+import AWS2Cert from './assets/certificate_logo/AWS2.png';
+import Docker1Cert from './assets/certificate_logo/docker1.png';
+import Docker2Cert from './assets/certificate_logo/docker2.png';
+import Docker3Cert from './assets/certificate_logo/docker3.png';
+import FlutterLaravelCert from './assets/certificate_logo/flutter&laravel.jpg';
+import HCICert from './assets/certificate_logo/HCI.png';
+import ISSCert from './assets/certificate_logo/ISS.png';
+import ISS2Cert from './assets/certificate_logo/ISS2.png';
+import ISS3Cert from './assets/certificate_logo/ISS3.png';
+import Kubernetes1Cert from './assets/certificate_logo/Kubernetes1.png';
+import LinuxCert from './assets/certificate_logo/linux.png';
+import MCPCert from './assets/certificate_logo/MCP.png';
+import PythonUTMCert from './assets/certificate_logo/python utm.jpg';
+import PyTorchCert from './assets/certificate_logo/pytorch.jpg';
+import RESMCert from './assets/certificate_logo/RESM.png';
+import TALENTCert from './assets/certificate_logo/TALENT.png';
 
 export const SkillsInfo = [
   {
@@ -102,7 +120,7 @@ export const SkillsInfo = [
       { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Figma', logo: figmaLogo },
-      { name: 'BLE-2', logo: ble2Logo },
+      { name: 'BLE', logo: ble2Logo },
       { name: 'MCP', logo: mcpLogo },
     ],
   },
@@ -208,5 +226,98 @@ export const SkillsInfo = [
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/MaysaraCS/Drawing-app",
       webapp: "https://maysaracs.github.io/Drawing-app/",
+    },
+  ]; 
+  
+  export const certificate = [
+    {
+      id: 0,
+      title: "Learn Angular Basics",
+      image: AngularCert,
+    },
+    {
+      id: 1,
+      title: "Learn AWS Basics",
+      image: AWS1Cert,
+    },
+    {
+      id: 2,
+      title: "AWS Badge",
+      image: AWS2Cert,
+    },
+    {
+      id: 3,
+      title: "Docker for Beginners",
+      image: Docker1Cert,
+    },
+    {
+      id: 4,
+      title: "Docker Crash Course",
+      image: Docker2Cert,
+    },
+    {
+      id: 5,
+      title: "Docker Labs",
+      image: Docker3Cert,
+    },
+    {
+      id: 6,
+      title: "Flutter & Laravel Mobile App Development",
+      image: FlutterLaravelCert,
+    },
+    {
+      id: 7,
+      title: "Human Computer Interaction",
+      image: HCICert,
+    },
+    {
+      id: 8,
+      title: "Mental Health of students in UTM",
+      image: ISSCert,
+    },
+    {
+      id: 9,
+      title: "Microsoft Word Workshop ",
+      image: ISS2Cert,
+    },
+    {
+      id: 10,
+      title: "Final Year Project Workshop",
+      image: ISS3Cert,
+    },
+    {
+      id: 11,
+      title: "Kubernetes Basics",
+      image: Kubernetes1Cert,
+    },
+    {
+      id: 12,
+      title: "Linux Basics",
+      image: LinuxCert,
+    },
+    {
+      id: 13,
+      title: "MCP Basics",
+      image: MCPCert,
+    },
+    {
+      id: 14,
+      title: "Python WorkShop at UTM",
+      image: PythonUTMCert,
+    },
+    {
+      id: 15,
+      title: "Python for deep learning using PyTorch",
+      image: PyTorchCert,
+    },
+    {
+      id: 16,
+      title: "RESM Symposium Iskandar Puteri Low Carbon Monitoring and Management System",
+      image: RESMCert,
+    },
+    {
+      id: 17,
+      title: "TALENT AND COMPETENCY MANAGEMENT COURSE",
+      image: TALENTCert,
     },
   ];  
