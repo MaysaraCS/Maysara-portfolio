@@ -1,9 +1,52 @@
-import React from 'react';
-import ReactTypingEffect from 'react-typing-effect';
+import React, { useState, useEffect } from 'react';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/personal.jpg';
 
+// Custom typing effect hook
+const useTypingEffect = (texts, speed = 100, eraseSpeed = 50, typingDelay = 500, eraseDelay = 2000) => {
+  const [displayText, setDisplayText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentText = texts[currentIndex];
+    
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing
+        if (displayText.length < currentText.length) {
+          setDisplayText(currentText.slice(0, displayText.length + 1));
+        } else {
+          // Finished typing, wait before deleting
+          setTimeout(() => setIsDeleting(true), eraseDelay);
+        }
+      } else {
+        // Deleting
+        if (displayText.length > 0) {
+          setDisplayText(currentText.slice(0, displayText.length - 1));
+        } else {
+          // Finished deleting, move to next text
+          setIsDeleting(false);
+          setCurrentIndex((prev) => (prev + 1) % texts.length);
+        }
+      }
+    }, isDeleting ? eraseSpeed : speed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentIndex, texts, speed, eraseSpeed, eraseDelay]);
+
+  return displayText;
+};
+
 const About = () => {
+  const typedText = useTypingEffect(
+    ['Fullstack Developer', 'App Developer', 'AI Engineer', 'Software Engineer'],
+    100,
+    50,
+    500,
+    2000
+  );
+
   return (
     <section
       id="about"
@@ -21,23 +64,12 @@ const About = () => {
             Maysara Mohamed
           </h2>
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 leading-tight">
             <span className="text-white">I am a </span>
-            <ReactTypingEffect
-              text={[
-                'Fullstack Developer',
-                'App Developer',
-                'AI Engineer',
-                'Software Engineer',
-              ]}
-              speed={100}
-              eraseSpeed={50}
-              typingDelay={500}
-              eraseDelay={2000}
-              cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
-              )}
-            />
+            <span className="text-[#8245ec]">
+              {typedText}
+              <span className="animate-pulse">|</span>
+            </span>
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
@@ -49,10 +81,8 @@ const About = () => {
             efficient solutions.
           </p>
           {/* Resume Button */}
-          {/* Add my new resume here befor deployment */}
           <a
             href=""
-            // href="https://drive.google.com/file/d/1_pLl2wjYVCU-wnqXIhjhYr0YC0SJXvwv/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
