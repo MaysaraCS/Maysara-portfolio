@@ -82,7 +82,7 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1ntfS3omOAer7CWfcN0E-v3JIbMw8zsMq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1oGgjjLAjV336yPCbeegGC5GCmZLjmhxP/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -91,7 +91,7 @@ const About = () => {
               boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
-            DOWNLOAD CV
+            My Resume
           </a>
           
         </div>

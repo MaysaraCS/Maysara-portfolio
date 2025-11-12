@@ -48,6 +48,7 @@ import CustomerService from './assets/work_logo/customerService.png';
 import DrawingApp from './assets/work_logo/drawingApp.png';
 import PrepWise from './assets/work_logo/PrepWise.png';
 import ResumeBuilder from './assets/work_logo/resumeBuilder.png';
+import NET from './assets/work_logo/NET.png';
 
 // Certificate Section Logo's
 import AngularCert from './assets/certificate_logo/Angular.jpg';
@@ -68,6 +69,8 @@ import PythonUTMCert from './assets/certificate_logo/python utm.jpg';
 import PyTorchCert from './assets/certificate_logo/pytorch.jpg';
 import RESMCert from './assets/certificate_logo/RESM.png';
 import TALENTCert from './assets/certificate_logo/TALENT.png';
+import GPA from './assets/certificate_logo/GPA.jpeg';
+import Volenteer from './assets/certificate_logo/volunteer.jpeg';
 
 export const SkillsInfo = [
   {
@@ -227,6 +230,15 @@ export const SkillsInfo = [
       github: "https://github.com/MaysaraCS/Drawing-app",
       webapp: "https://maysaracs.github.io/Drawing-app/",
     },
+    {
+      id: 6,
+      title: "Expense Tracker .NET Application",
+      description: "Developed a full-stack expense tracking web application using ASP.NET Core MVC, Entity Framework Core, and MySQL. Implemented CRUD operations, data visualization with interactive charts, and real-time dashboard analytics for income and expense management.",
+      image: NET,
+      tags: ["ASP.NET", "MySQL", "Entity Framework Core", "MVC Architecture"],
+      github: "https://github.com/MaysaraCS/Expense-Tracker",
+      webapp: "https://github.com/MaysaraCS/Expense-Tracker",
+    },
   ]; 
   
   export const certificate = [
@@ -319,5 +331,15 @@ export const SkillsInfo = [
       id: 17,
       title: "TALENT AND COMPETENCY MANAGEMENT COURSE",
       image: TALENTCert,
+    },
+    {
+      id: 18,
+      title: "Recognition of Excellence Performance in Study",
+      image: GPA,
+    },
+    {
+      id: 19,
+      title: "International Egyptian Students Society Volenteer",
+      image: Volenteer,
     },
   ];  
