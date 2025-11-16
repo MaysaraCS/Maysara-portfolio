@@ -49,6 +49,7 @@ import DrawingApp from './assets/work_logo/drawingApp.png';
 import PrepWise from './assets/work_logo/PrepWise.png';
 import ResumeBuilder from './assets/work_logo/resumeBuilder.png';
 import NET from './assets/work_logo/NET.png';
+import QuickAI from './assets/work_logo/QuickAI.png';
 
 // Certificate Section Logo's
 import AngularCert from './assets/certificate_logo/Angular.jpg';
@@ -238,6 +239,15 @@ export const SkillsInfo = [
       tags: ["ASP.NET", "MySQL", "Entity Framework Core", "MVC Architecture"],
       github: "https://github.com/MaysaraCS/Expense-Tracker",
       webapp: "https://github.com/MaysaraCS/Expense-Tracker",
+    },
+    {
+      id: 7,
+      title: "QuickAI - AI Content Creation Platform.",
+      description: "Built a full-stack SaaS platform using (PERN stack) with Clerk authentication and subscription management. Integrated Google Gemini API for text generation (articles, blog titles, resume reviews), ClipDrop API for AI image generation, and Cloudinary API for advanced image manipulation (background/object removal), implementing rate limiting, and role-based access control for free and premium subscriptions.",
+      image: QuickAI,
+      tags: ["PostgreSQL", "Express", " React", "Node.js", "Clerk", "Google Gemini API", "ClipDrop API", "Cloudinary API"],
+      github: "https://github.com/MaysaraCS/QuickAI",
+      webapp: "https://quick-6j64wqn18-maysaras-projects-4a1f3ec7.vercel.app/",
     },
   ]; 
   
