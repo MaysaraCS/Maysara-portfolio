@@ -10,7 +10,7 @@ const useTypingEffect = (texts, speed = 100, eraseSpeed = 50, typingDelay = 500,
 
   useEffect(() => {
     const currentText = texts[currentIndex];
-    
+
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         // Typing
@@ -73,16 +73,16 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a full-stack developer with experience in building scalable 
-            web & mobile applications along with IOT and BLE technologies. 
-            Skilled in both front-end and back-end development, 
+            I am a full-stack developer with experience in building scalable
+            web & mobile applications along with IOT and BLE technologies.
+            Skilled in both front-end and back-end development,
             I specialize in MERN stack & JavaSpringBoot and other
             modern technologies to create seamless user experiences and
             efficient solutions.
           </p>
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/143PNqBZ5QYQlx0aHPFS8UV07mqBMjB2f/view?usp=sharing"
+            href="https://drive.google.com/file/d/1V_BG3CDr8sUGLXisjgrXZDPxFKev-YtE/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -93,7 +93,7 @@ const About = () => {
           >
             My Resume
           </a>
-          
+
         </div>
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
