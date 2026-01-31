@@ -46,11 +46,11 @@ import BFRM from './assets/work_logo/BFRM.png';
 import ChatApp from './assets/work_logo/chatApp.png';
 import CustomerService from './assets/work_logo/customerService.png';
 import DrawingApp from './assets/work_logo/drawingApp.png';
-import PrepWise from './assets/work_logo/PrepWise.png';
+import landing from './assets/work_logo/landing.png';
 import ResumeBuilder from './assets/work_logo/resumeBuilder.png';
 import NET from './assets/work_logo/NET.png';
 import QuickAI from './assets/work_logo/QuickAI.png';
-import AngularExpenseTracker from './assets/work_logo/AngularExpense Tracker.png';
+import EcommerceAngular from './assets/work_logo/landing-page.png';
 
 // Certificate Section Logo's
 import AngularCert from './assets/certificate_logo/Angular.jpg';
@@ -74,6 +74,8 @@ import TALENTCert from './assets/certificate_logo/TALENT.png';
 import GPA from './assets/certificate_logo/GPA.jpeg';
 import Volenteer from './assets/certificate_logo/volunteer.jpeg';
 import MicroServices from './assets/certificate_logo/Java Spring Boot - Microservices.jpg';
+import AngularSpringBoot1 from './assets/certificate_logo/Angular-SpringBoot.jpg';
+import AngularSpringBoot2 from './assets/certificate_logo/Angular-SpringBoot-Ecommerce.jpg';
 
 export const SkillsInfo = [
   {
@@ -187,13 +189,13 @@ export const projects = [
   },
   {
     id: 1,
-    title: "PrepWise - AI Interview Preparation Assistant ",
+    title: "Student Management System - Full Stack",
     description:
-      "Developed PrepWise, an AI-powered Interview Preparation Assistant built with the MERN stack and TypeScript, integrated with the Vapi AI API for intelligent interview simulations. Implemented Firebase for authentication and database management, enabling secure user registration and login. Designed a custom workflow in Vapi to process user input, extract data in JSON format, and generate personalized interview questions and feedback. The application provides an interactive, AI-driven experience to help users prepare effectively for interviews.",
-    image: PrepWise,
-    tags: ["MongoDB", "Express.js", "React", "Node.js", "TypeScript", "Vapi AI"],
-    github: "https://github.com/MaysaraCS/AI-Voice-Agent-Interview-Platform",
-    webapp: "https://ai-voice-agent-interview-platform-eight.vercel.app/sign-in",
+      "Developed a full-stack student management system using Angular 19 and Spring Boot with PostgreSQL database. Implemented role-based authentication with JWT tokens for admin, lecturer, and student users. Built RESTful APIs to manage CRUD operations for students, lecturers, and course assignments with business logic enforcing enrollment limits. Created responsive user interfaces with Angular for three different dashboard types handling subject assignments and user management.",
+    image: landing,
+    tags: ["Angular", "SpringBoot", "PostgreSql", "HTML", "TypeScript", "CSS"],
+    github: "https://github.com/MaysaraCS/Student-Management-",
+    webapp: "https://github.com/MaysaraCS/Student-Management-",
   },
   {
     id: 2,
@@ -253,10 +255,10 @@ export const projects = [
   },
   {
     id: 8,
-    title: "Angular Node.js Expense Tracker ",
-    description: "Developed a full-stack expense tracking web application using Angular for frontend and Node.js for backend, Implemented CRUD operations, data visualization with interactive charts, and real-time dashboard analytics expense management.",
-    image: AngularExpenseTracker,
-    tags: ["Angular", "Node.js", "MongoDB"],
+    title: "Full-stack e-commerce web application",
+    description: "Developed a full-stack e-commerce web application using Angular and Spring Boot with features including product browsing, shopping cart management, and secure checkout. Implemented user authentication with Auth0 and integrated Stripe API for payment processing. Built RESTful APIs using Spring Data JPA and PostgreSQL for data persistence, and created a responsive frontend with Angular and Bootstrap. Designed secure endpoints with Spring Security OAuth2 and JWT token validation for protected routes.",
+    image: EcommerceAngular,
+    tags: ["Angular", "SpringBoot", "PostgreSql", "HTML", "TypeScript", "CSS"],
     github: "https://github.com/MaysaraCS/Angular-Expense-Tracker",
     webapp: "https://github.com/MaysaraCS/Angular-Expense-Tracker",
   },
@@ -367,5 +369,15 @@ export const certificate = [
     id: 20,
     title: "Java Spring Boot Microservices eCommerce Project Masterclass",
     image: MicroServices,
+  },
+  {
+    id: 21,
+    title: "Java Full Stack with Spring Boot and Angular",
+    image: AngularSpringBoot1,
+  },
+  {
+    id: 22,
+    title: "Angular and Java Spring Boot E-Commerce Website",
+    image: AngularSpringBoot2,
   },
 ];  
